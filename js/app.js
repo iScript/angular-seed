@@ -1,7 +1,17 @@
+define([
+    'angular',
+    'filters',
+    'services',
+    'directives',
+    'controllers',
+    'angularRoute',
+    'angularAnimate',
+    'loadingBar'
+],function(angular,controllers,angularRoute,angularAnimate,loadingBar){
+//=============================== start
+
 'use strict';
-angular.module('myApp', [
-    'ngRoute','y.controllers','chieffancypants.loadingBar', 'ngAnimate'
-]).
+angular.module('myApp', ['ngRoute','y.controllers','chieffancypants.loadingBar', 'ngAnimate']).
 config(['$routeProvider', function($routeProvider) {
     $routeProvider.
     when('/', {
@@ -13,4 +23,10 @@ config(['$routeProvider', function($routeProvider) {
     });
     //$sceProvider.enabled(false);
 }]);
+
+//=========================== end
+});
+
+
+
     

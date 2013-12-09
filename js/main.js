@@ -9,9 +9,7 @@ require.config({
         angularResource: '../bower_components/angular-resource/angular-resource.min',
         angularAnimate: '../bower_components/angular-animate/angular-animate.min',
         bootstrap : '../bower_components/bootstrap/dist/js/bootstrap.min',
-        loadingBar : "../bower_components/angular-loading-bar/src/loading-bar",
-        controllers : 'controllers',
-        app : "app" 
+        loadingBar : "../bower_components/angular-loading-bar/src/loading-bar"
     },
     //配置依赖、外部输出等
     shim: {
@@ -20,9 +18,7 @@ require.config({
         'angularRoute': {deps : ['angular']},
         "angularAnimate" : {deps : ['angular']},
         'angularResource': {deps : ['angular']},
-        'controllers' : {deps : ['angular']},
-        'loadingBar' : {deps : ['angular','angularAnimate']},
-        'app' : {deps : ['angular']}
+        'loadingBar' : {deps : ['angularAnimate']}
     },
     priority: [
         "angular"
@@ -31,13 +27,8 @@ require.config({
 
 require( [
     'angular',
-    'angularRoute',
-    'angularResource',
-    'angularAnimate',
-    'controllers',
-    'loadingBar',
     'app'
-], function(angular,angularRoute,controller,app) {
+], function(angular,app) {
     //加载完成后初始化
     angular.bootstrap(document, ['myApp']);
 });
