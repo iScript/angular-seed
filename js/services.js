@@ -4,7 +4,7 @@ define([
 ],function(angular,angularResource){
 
     /* Services */
-    angular.module('y.services', ['ngResource']).
+    angular.module('myApp.services', ['ngResource']).
     factory('', function ($resource) {
         //return $resource('/index/best',{});
     });

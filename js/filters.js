@@ -3,7 +3,7 @@ define([
     'angular'
 ],function(angular){
 
-	angular.module('y.filters', []).
+	angular.module('myApp.filters', []).
 	//字符串反转
 	filter('reverse', function () {
 	    return function(input) {

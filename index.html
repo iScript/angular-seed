@@ -4,21 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
     <title>angular-seed</title>
-    <style>
-    [ng-cloak]{
-        display: none;
-    }
-    </style>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="bower_components/angular-loading-bar/src/loading-bar.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <!--[if lte IE 8]>
-    // fuck IE
+    <!--[if te IE 9]>
+    <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+    <script src="bower_components/json2/json2.js"></script>
 	<![endif]-->
     <body ng-cloak>
         <noscript>设备不支持javascript</noscript>
         <div ng-view class="view">
-          
         </div>
         <script type="text/javascript" data-main="js/main" src="bower_components/requirejs/require.js"></script>
     </body>

@@ -30,5 +30,7 @@ require( [
     'app'
 ], function(angular,app) {
     //加载完成后初始化
-    angular.bootstrap(document, ['myApp']);
+    angular.element(document).ready(function(){
+        angular.bootstrap(document, ['myApp']);
+    });
 });

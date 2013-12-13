@@ -19,6 +19,7 @@
   ],
   "dependencies": {
     "requirejs" : "latest",
+    "requirejs-text" : "latest",
     "jquery" : "latest",
     "bootstrap": "latest",
     "angular" : "latest",
@@ -26,6 +27,8 @@
     "angular-route": "latest",
     "angular-sanitize" : "latest",
     "angular-animate" : "latest",
-    "angular-loading-bar" : "latest"
+    "angular-loading-bar" : "latest",
+    "json2" : "latest",
+    "html5shiv" : "latest"
   }
 }
