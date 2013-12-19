@@ -7,5 +7,8 @@ define([
     //首页控制器
     controller('indexCtrl', ['$scope',function($scope) {
         $scope.name = 'hello';
+    }]).
+    controller('loginCtrl', ['$scope',function($scope) {
+        
     }]);
 });

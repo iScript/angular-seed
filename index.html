@@ -4,18 +4,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
     <title>angular-seed</title>
-    <link href='http://fonts.googleapis.com/css?family=Roboto:100,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="bower_components/angular-loading-bar/src/loading-bar.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/loading-bar.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <style type="text/css">
+        /* angular-animate */
+        .view.ng-enter {-webkit-transition: 0.5s linear all; transition: 0.5s linear all;position:relative;left:100%;opacity: 0;}
+        .view.ng-enter.ng-enter-active {opacity: 1;left:0;}
+    </style>
     <!--[if te IE 9]>
-    <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
-    <script src="bower_components/json2/json2.js"></script>
+    // fuck IE
 	<![endif]-->
     <body ng-cloak>
         <noscript>设备不支持javascript</noscript>
         <div ng-view class="view">
         </div>
-        <script type="text/javascript" data-main="js/main" src="bower_components/requirejs/require.js"></script>
+        <script type="text/javascript" data-main="scripts/main" src="scripts/require.js"></script>
     </body>
 </html>

@@ -18,6 +18,10 @@ config(['$routeProvider', function($routeProvider) {
         templateUrl: 'templates/index.html',
         controller: 'indexCtrl'
     }).
+    when('/login', {
+        templateUrl: 'templates/login.html',
+        controller: 'indexCtrl'
+    }).
     otherwise({
         redirectTo: '/'
     });
