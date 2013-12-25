@@ -8,7 +8,6 @@ define([
     'angularAnimate',
     'loadingBar'
 ],function(angular,filters,services,directives,controllers,angularRoute,angularAnimate,loadingBar){
-//=============================== start
 
 'use strict';
 angular.module('myApp', ['ngRoute','myApp.controllers','chieffancypants.loadingBar', 'ngAnimate']).
@@ -31,7 +30,7 @@ config(['$routeProvider', function($routeProvider) {
     console.log('== all the module loaded == ');
 }]);
 
-//=========================== end
+
 });
 
 

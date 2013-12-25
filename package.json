@@ -13,7 +13,11 @@
 	    "grunt-cli": "latest",
 	    "grunt-contrib-uglify" : "latest",
 	    "grunt-contrib-requirejs" : "latest",
+	    "grunt-contrib-jshint" : "latest",
 	    "grunt-contrib-copy" : "latest",
-	    "grunt-usemin" : "latest"
+	    "grunt-usemin" : "latest",
+	    "karma" : "latest",
+    	"karma-jasmine" : "latest",
+    	"karma-requirejs" : "latest"
   	}
 }

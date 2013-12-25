@@ -7,7 +7,7 @@
   "description": "123",
   "main": "js.js",
   "keywords": [
-    "12"
+    "angular"
   ],
   "license": "MIT",
   "ignore": [
@@ -28,6 +28,7 @@
     "angular-animate" : "latest",
     "angular-loading-bar" : "latest",
     "json2" : "latest",
-    "html5shiv" : "latest"
+    "html5shiv" : "latest",
+    "socket.io-client" : "latest"
   }
 }
