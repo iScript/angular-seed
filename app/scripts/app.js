@@ -25,6 +25,8 @@ config(['$routeProvider', function($routeProvider) {
         redirectTo: '/'
     });
     //$sceProvider.enabled(false);
+    //$locationProvider.hashPrefix('!');
+    //$locationProvider.html5Mode(true);
 }]).run(['$rootScope',function($rootScope){
     //所有模块加载完成初始化
     console.log('== all the module loaded == ');
