@@ -1,6 +1,6 @@
 # Angular-seed
 
-Angular-seed by angular.js/require.js/bootstrap 
+Angular-seed by angular.js/jquery.js/bootstrap 
 
 ## Install
 ```sh
