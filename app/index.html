@@ -1,24 +1,37 @@
 ﻿<!DOCTYPE html>
-<html>
+<html ng-app="myApp">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
-    <title>angular-seed</title>
-    <link rel="stylesheet" href="styles/bootstrap.min.css" />
-    <link rel="stylesheet" href="styles/loading-bar.css" />
+    <title>{{title}}</title>
+    <!-- build:css compiled/all.css -->
+    <link rel="stylesheet" href="styles/bootstrap.css" />
+    <link rel="stylesheet" href="../bower_components/angular-loading-bar/build/loading-bar.css" />
+    <link rel="stylesheet" href="styles/angular.css" />
     <link rel="stylesheet" href="styles/style.css" />
-    <style type="text/css">
-        /* angular-animate */
-        .view.ng-enter {-webkit-transition: 0.5s linear all; transition: 0.5s linear all;position:relative;left:100%;opacity: 0;}
-        .view.ng-enter.ng-enter-active {opacity: 1;left:0;}
-    </style>
-    <!--[if te IE 9]>
+    <!-- endbuild -->
+
+    <!--[if lte IE 9]>
     // fuck IE
 	<![endif]-->
-    <body ng-cloak>
-        <noscript>设备不支持javascript</noscript>
-        <div ng-view class="view">
-        </div>
-        <script type="text/javascript" data-main="scripts/main" src="scripts/lib/require.js"></script>
-    </body>
+</head>
+<body>
+    <noscript>设备不支持javascript</noscript>
+    <div ng-view class="view">
+    </div>
+</body>
+
+<!-- build:js compiled/all.js -->
+<script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="../bower_components/angular-animate/angular-animate.js"></script>
+<script type="text/javascript" src="../bower_components/angular-loading-bar/build/loading-bar.js"></script>
+<script type="text/javascript" src="../bower_components/angular-route/angular-route.js"></script>
+<script type="text/javascript" src="scripts/services.js"></script>
+<script type="text/javascript" src="scripts/directives.js"></script>
+<script type="text/javascript" src="scripts/filters.js"></script>
+<script type="text/javascript" src="scripts/controllers.js"></script>
+<script type="text/javascript" src="scripts/app.js"></script>
+<!-- endbuild -->
+
 </html>

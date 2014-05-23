@@ -1,0 +1,4 @@
+@charset "utf-8";
+/* angular-animate */
+.view.ng-enter {-webkit-transition: 0.1s linear all; transition: 0.5s linear all;position:relative;left:100%;opacity: 0;}
+.view.ng-enter.ng-enter-active {opacity: 1;left:0;}
